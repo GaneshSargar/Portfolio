@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b3840bb43b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu"> 
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Certificates</a></li>
+                    <li><a href="#portfolio">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()" ></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web Designer..!</p>
+                <h1>Hi, I'm <span>Ganesh</span> Sargar<br>from India</h1>
+            </div>
+        </div>
+    </div>
+<!--------------------- about ------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a BCS 2nd year student of Willingdon College, Sangli.
+                         I have interest in programming. I have tendency to participate in any event organized by our college.
+                        Looking to utilize my knowledge and leadership skills in an esteemed organization.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>HTML, CSS, JavaScript, Bootstrap, GitHub, Node js, Express</li>
+                                <li><span>Programming Languages</span><br>Java, JavaScript, C, C++</li>
+                                <li><span>Operating System</span><br>Linux, Windows</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Aug 2023 - Sept 2023</span><br>Internship at CodSoft.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Aug, 2022 - June, 2025</span><br>BCS from Willingdon College, Sangli.<br><b>CGPA : 9.4</b></li>
+                                <li><span>Mar, 2022</span><br>HSC from Smt. Kasturbai Walchand College, Sangli.<br><b>Percentage : 68.67%</b></li>
+                                <li><span>Mar, 2020</span><br>SSC form Vidyniketan Highschool, Gaudwadi. <br><b>Percentage : 91.00%</b></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------- Certificates -------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Certificates</h1>
+            <div class="services-list">
+                <div class="certi">
+                    <h2><b>Java With DSA</b></h2>
+                    <p>I have completed 3.5 months of Data Structure & Algorithm with Java course from <b>Apna College</b>.</p>
+                    <a href="images/Alpha_Certificate.pdf" class="btn btn2">See Certificate</a>
+                </div>
+                <div class="certi">
+                    <h2><b>CodSoft</b></h2>
+                    <p>I've been offered an Internship offer letter in Web-Development from CodSoft</p>
+                    <a href="images/CodSoft Internship.pdf" class="btn btn2">See Certificate</a>
+                </div>
+                <div class="certi">
+                    <h2><b>Runner-Up</b></h2>
+                    <p>Secured <b>Runner-Up</b> position in C programming in a State Level Competition (WILLSOFT) organized by Willingdon College, Sangli.</p>
+                    <a href="#" class="btn btn2">See Certificate</a>
+                </div>
+                <div class="certi">
+                    <h2><b>C language</b></h2>
+                    <p>I have obtained a new certification: C (Programming language) from <b>Great Learning</b></p>
+                    <a href="images/C_Certificate.pdf" class="btn btn2">See Certificate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------- Portfolio ------------------------>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" >
+                    <div class="layer">
+                        <h3><b>CloudPoint</b> - API's based Weather Application.</h3>
+                        <p><ul><li>A web application which provides the user with the weather of any place clicked on the map rendered on the page.</li>
+                        <li>It uses basic HTML, CSS, JavaScript for fronted and build on Weather API for data.</li></ul>
+                        </p>
+                        <a href="file:///D:/Portfolio/works/Weather/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" >
+                    <div class="layer">
+                        <h3><br>Spotify Website Clone</h3>
+                        <p><ul><li>Designed and Scrafted a fully functional Spotify Website Clone using HTML, CSS.</li></ul>
+                        </p>
+                        <a href="file:///D:/Portfolio/works/Spotify%20Clone/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-1.png" >
+                    <div class="layer">
+                        <h3><b>Photography</b> - Based on HTML and CSS</h3>
+                        <p><ul><li>Created a simple Web-Page shows different menus related to Photography using HTML and CSS.</li></ul>
+                        </p>
+                        <a href="file:///D:/Portfolio/Works/Photography/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" >
+                    <div class="layer">
+                        <h3><br>Syman Says Game</h3>
+                        <p><ul><li>Made a simple Syman Says Game using basic HTML, CSS and JavaScript.</li></ul>
+                        </p>
+                        <a href="file:///D:/Portfolio/Works/Siman%20Says%20Game/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" >
+                    <div class="layer">
+                        <h3><b>Database Management - Based on file handling.</b></h3>
+                        <p><ul><li>Student registration and record management system, ensures accurate data management using C language.</li></ul>
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://github.com/GaneshSargar" class="btn">See More</a>
+
+        </div>
+    </div>
+
+<!--------------------- Contact ------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>ganeshsargar@0211.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>+91-7498986509</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ganesh-sargar0211/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/GaneshSargar"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.facebook.com/ganesh.sargar.9022"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/Ganesh_Sargar02"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/ganeshsargar_02/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/Ganesh_Sargar_Resume.pdf"  class="btn btn2" >Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Ganesh. Made with <i class="fa-regular fa-heart"></i> by me.</p>
+        </div>
+    </div>
+
+<script src="app.js"></script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyjEn8xCUo7dc66A39YHwNYYuGlWZ-AxeBh0qVfO6lwUCCIP31CwQSxUsmofby5ST7R/exec';
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfuly.";
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000);
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
