@@ -471,3 +471,19 @@ nav .fa-solid{
     margin-top: -40px;
     display: block;
 }
+
+.borderlink {
+    border: 1px solid white;
+    border-radius: 7px;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    padding-top: 4px;
+}
+
+.borderlink:hover {
+    background-color: rgb(253, 238, 238);
+    color: black;
+}
